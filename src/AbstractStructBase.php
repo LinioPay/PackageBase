@@ -8,7 +8,7 @@ abstract class AbstractStructBase implements StructInterface, \JsonSerializable
      * Returns the properties of this object
      * @return mixed[]
      */
-    public function jsonSerialize()
+    public function jsonSerialize() : array
     {
         return \get_object_vars($this);
     }
